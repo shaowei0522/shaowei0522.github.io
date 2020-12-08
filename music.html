@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+</head>
+<body>
+
+<!--PageEndHtml Block Begin-->
+<!--看板娘开始-->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            //jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型，替换时后面名字也要替换掉
+          jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 60,  //小萝莉的宽度
+            "height": 80, //小萝莉的高度
+            "hOffset":5,
+            "vOffset": 5
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+<!--看板娘结束-->
+<!--PageEndHtml Block End-->
+
+    <meting-js
+        server="tencent"
+        type="playlist"
+        id="7694720463"
+        fixed="true"
+        autoplay="true"
+        loop="all"
+        order="random"
+        preload="auto"
+        list-folded="ture"
+        list-max-height="500px"
+        lrc-type="1">
+</meting-js>
+
+</body>
+</html>
