@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>小鞠</title>
+  <!-- require APlayer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  <!-- require MetingJS -->
+  <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
   <style>
-
     header {
       background: url(./img/p-banner.jpg) no-repeat center;
       background-size: cover;
@@ -19,7 +22,6 @@
   </style>
 </head>
 <body>
-
   <header>
 		<div><p><b>鞠婧祎</b>中国内地流行乐女歌手<br>影视演员</p></div>
 		<!-- <div class="icon-roll">
@@ -29,8 +31,21 @@
 			<img src="image/icon-roll-a2.png" alt="滚动" class="roll-3">
 		</div> -->
 	</header>
-	<!--banner区块，结束-->
+  <!--banner区块，结束-->
   
+  <meting-js
+  server="tencent"
+  type="playlist"
+  id="7341051638"
+  fixed="true"
+  autoplay="true"
+  loop="all"
+  order="random"
+  preload="auto"
+  list-folded="ture"
+  list-max-height="500px"
+  lrc-type="1">
+</meting-js>
 </body>
 </html>
 
